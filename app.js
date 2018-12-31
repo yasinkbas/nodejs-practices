@@ -14,12 +14,12 @@ var app = express();
 
 // mongodb://host/dbname
 mongoose.connect('mongodb://localhost/udemy', { useNewUrlParser: true})
-    .then(() => {
-        console.log('Mongodb is connected');
-    })
-    .catch((err) => {
-        console.log('mongodb error :',err)
-    })
+mongoose.connection.on('open', () => {
+    console.log('MongoDB: Connected');
+});
+mongoose.connection.on('error', (err) => {
+    console.log("MongoDB: Error: ", err);
+});
 
 app.use(logger('dev'));
 app.use(express.json());
