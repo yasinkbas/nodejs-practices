@@ -1,0 +1,20 @@
+{
+  "name": "realtime-liveballs",
+  "description": "",
+  "main": "",
+  "authors": [
+    "yasinkbas <yasin.kbas12@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yasinkbas/nodejs-practices",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.5"
+  }
+}
